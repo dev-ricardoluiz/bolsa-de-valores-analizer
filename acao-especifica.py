@@ -176,12 +176,11 @@ try:
         cagr_lucros = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[5]/div/div[2]/div/div/strong').text
         print('CAGR LUCROS (5 ANOS)', cagr_lucros)
 
-
-
         #Após mostrar todos os indicadores da ação fazemos algumas análises
 
+        #
 
-        
+        print('')
     except NoSuchElementException:
         print('Não foi possível obter os dados da ação', ticker)
 except NoSuchElementException:
