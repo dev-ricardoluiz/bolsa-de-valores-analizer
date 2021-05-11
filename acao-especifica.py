@@ -23,7 +23,6 @@ ticker = input('Digite o Ticket (Ex.: PETR3) da Ação que deseja analizar: ')
 
 browser = webdriver.Chrome(ChromeDriverManager().install())
 
-
 try:
     browser.get('https://statusinvest.com.br/acoes/'+ticker)
     try:
@@ -50,51 +49,51 @@ try:
         print('Dividend Yield:', dy)
 
         #PEG RATIO
-        peg_ratio = browser.find_element_by_xpath('').text
+        peg_ratio = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[3]/div/div/strong').text
         print(peg_ratio)
 
         #P/VP
-        p_vp = browser.find_element_by_xpath('').text
+        p_vp = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[4]/div/div/strong').text
         print(p_vp)
 
         #EV/EBITDA
-        ev_ebitda = browser.find_element_by_xpath('').text
+        ev_ebitda = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[5]/div/div/strong').text
         print(ev_ebitda)
 
         #EV/EBIT
-        ev_ebit = browser.find_element_by_xpath('').text
+        ev_ebit = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[6]/div/div/strong').text
         print(ev_ebit)
 
         #P/EBITDA
-        p_ebitda = browser.find_element_by_xpath('').text
+        p_ebitda = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[7]/div/div/strong').text
         print(p_ebitda)
 
         #P/EBIT
-        p_ebit = browser.find_element_by_xpath('').text
+        p_ebit = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[8]/div/div/strong').text
         print(p_ebit)
 
         #VPA
-        vpa = browser.find_element_by_xpath('').text
+        vpa = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[9]/div/div/strong').text
         print(vpa)
 
         #P/ATIVO
-        p_ativo = browser.find_element_by_xpath('').text
+        p_ativo = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[10]/div/div/strong').text
         print(p_ativo)
 
         #LPA
-        lpa = browser.find_element_by_xpath('').text
+        lpa = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[11]/div/div/strong').text
         print(lpa)
 
         #P/SR
-        p_sr = browser.find_element_by_xpath('').text
+        p_sr = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[12]/div/div/strong').text
         print(p_sr)
 
         #P/CAP.GIRO
-        p_cap_giro = browser.find_element_by_xpath('').text
+        p_cap_giro = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[13]/div/div/strong').text
         print(p_cap_giro)
 
         #P/ATIVO CIRCULANTE LÍQUIDO
-        p_ativo_circ_liq = browser.find_element_by_xpath('').text
+        p_ativo_circ_liq = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[14]/div/div/strong').text
         print(p_ativo_circ_liq)
 
         #############################
