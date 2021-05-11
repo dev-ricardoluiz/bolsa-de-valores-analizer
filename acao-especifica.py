@@ -17,9 +17,11 @@ import re
 import time
 from time import sleep
 
-#input para especificar ticket da ação que deseja avaliar
-
+# input para especificar ticket da ação que deseja avaliar
 ticker = input('Digite o Ticket (Ex.: PETR3) da Ação que deseja analizar: ')
+
+# array com todas as ações que queira avaliar
+#ticker = ["LWSA3", "CSNA3", "PETR4"]
 
 browser = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -176,9 +178,9 @@ try:
         cagr_lucros = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[5]/div/div[2]/div/div/strong').text
         print('CAGR LUCROS (5 ANOS)', cagr_lucros)
 
-        #Após mostrar todos os indicadores da ação fazemos algumas análises
+        # Após mostrar todos os indicadores da ação fazemos algumas análises
 
-        #
+        # Incluir série de condições a partir da Avaliação
 
         print('')
     except NoSuchElementException:
