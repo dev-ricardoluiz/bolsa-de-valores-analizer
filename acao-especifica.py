@@ -46,135 +46,135 @@ try:
 
         #D.Y.
         dy = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[1]/div/div/strong').text
-        print('Dividend Yield:', dy)
+        print('DIVIDEND YIELD:', dy)
 
         #PEG RATIO
         peg_ratio = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[3]/div/div/strong').text
-        print(peg_ratio)
+        print('PEG RATIO:', peg_ratio)
 
         #P/VP
         p_vp = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[4]/div/div/strong').text
-        print(p_vp)
+        print('P/VP:', p_vp)
 
         #EV/EBITDA
         ev_ebitda = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[5]/div/div/strong').text
-        print(ev_ebitda)
+        print('EV/EBITDA:', ev_ebitda)
 
         #EV/EBIT
         ev_ebit = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[6]/div/div/strong').text
-        print(ev_ebit)
+        print('EV/EBIT:', ev_ebit)
 
         #P/EBITDA
         p_ebitda = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[7]/div/div/strong').text
-        print(p_ebitda)
+        print('P/EBITDA:', p_ebitda)
 
         #P/EBIT
         p_ebit = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[8]/div/div/strong').text
-        print(p_ebit)
+        print('P/EBIT:', p_ebit)
 
         #VPA
         vpa = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[9]/div/div/strong').text
-        print(vpa)
+        print('VPA:', vpa)
 
         #P/ATIVO
         p_ativo = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[10]/div/div/strong').text
-        print(p_ativo)
+        print('P/ATIVO:', p_ativo)
 
         #LPA
         lpa = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[11]/div/div/strong').text
-        print(lpa)
+        print('LPA:', lpa)
 
         #P/SR
         p_sr = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[12]/div/div/strong').text
-        print(p_sr)
+        print('P/SR:', p_sr)
 
         #P/CAP.GIRO
         p_cap_giro = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[13]/div/div/strong').text
-        print(p_cap_giro)
+        print('P/CAP. GIRO:', p_cap_giro)
 
         #P/ATIVO CIRCULANTE LÍQUIDO
         p_ativo_circ_liq = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[14]/div/div/strong').text
-        print(p_ativo_circ_liq)
+        print('P/ATIVO CIRCULANTE LÍQUIDO:', p_ativo_circ_liq)
 
         #############################
         #INDICADORES DE ENDIVIDAMENTO
         #############################
 
         #DÍVIDA LÍQUIDA/PL
-        divida_liq_pl = browser.find_element_by_xpath('').text
-        print(divida_liq_pl)
+        divida_liq_pl = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[1]/div/div/strong').text
+        print('DÍVIDA LÍQUIDA:', divida_liq_pl)
 
         #DÍVIDA LÍQUIDA/EBITDA
-        divida_liq_ebitda = browser.find_element_by_xpath('').text
-        print(divida_liq_ebitda)
+        divida_liq_ebitda = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[2]/div/div/strong').text
+        print('DÍVIDA LÍQUIDA/EBITDA:', divida_liq_ebitda)
 
         #DÍVIDA LÍQUIDA/EBIT
-        divida_liq_ebit = browser.find_element_by_xpath('').text
-        print(divida_liq_ebit)
+        divida_liq_ebit = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[3]/div/div/strong').text
+        print('DÍVIDA LÍQUIDA/EBIT:', divida_liq_ebit)
 
         #PL/ATIVOS
-        pl_ativos = browser.find_element_by_xpath('').text
-        print(pl_ativos)
+        pl_ativos = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[4]/div/div/strong').text
+        print('PL/ATIVOS:', pl_ativos)
 
         #PASSIVOS/ATIVOS
-        passivos_ativos = browser.find_element_by_xpath('').text
-        print(passivos_ativos)
+        passivos_ativos = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[5]/div/div/strong').text
+        print('PASSIVOS/ATIVOS:', passivos_ativos)
 
         #LIQ RECORRENTE
-        liq_recorrente = browser.find_element_by_xpath('').text
-        print(liq_recorrente)
+        liq_recorrente = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[6]/div/div/strong').text
+        print('LIQUIDEZ RECORRENTE:', liq_recorrente)
 
         ##########################
         #INDICADORES DE EFICIÊNCIA
         ##########################
 
         #MARGEM BRUTA
-        margem_bruta =  browser.find_element_by_xpath('').text
-        print(margem_bruta)
+        margem_bruta =  browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[3]/div/div[1]/div/div/strong').text
+        print('MARGEM BRUTA:', margem_bruta)
 
         #MARGEM EBITDA
-        margem_ebitda = browser.find_element_by_xpath('').text
-        print(margem_ebitda)
+        margem_ebitda = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[3]/div/div[2]/div/div/strong').text
+        print('MARGEM EBITDA:', margem_ebitda)
 
         #MARGEM EBIT
-        margem_ebit = browser.find_element_by_xpath('').text
-        print(margem_ebit)
+        margem_ebit = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[3]/div/div[3]/div/div/strong').text
+        print('MARGEM EBIT:', margem_ebit)
 
         #MARGEM LÍQUIDA
-        margem_liquida = browser.find_element_by_xpath('').text
-        print(margem_liquida)
+        margem_liquida = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[3]/div/div[4]/div/div/strong').text
+        print('MARGEM LÍQUIDA:', margem_liquida)
 
         #############################
         #INDICADORES DE RENTABILIDADE
         #############################
         
         #ROE
-        roe =  browser.find_element_by_xpath('').text
-        print(roe)
+        roe =  browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[4]/div/div[1]/div/div/strong').text
+        print('ROE:', roe)
 
         #ROA
-        roa = browser.find_element_by_xpath('').text
-        print(roa)
+        roa = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[4]/div/div[2]/div/div/strong').text
+        print('ROA:', roa)
 
         #ROIC
-        roic = browser.find_element_by_xpath('').text
-        print(roic)
+        roic = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[4]/div/div[3]/div/div/strong').text
+        print('ROIC:', roic)
 
         #GIRO ATIVOS
-        giro_ativos = browser.find_element_by_xpath('').text
-        print(giro_ativos)
+        giro_ativos = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[4]/div/div[4]/div/div/strong').text
+        print('GIRO ATIVOS:', giro_ativos)
 
         ##########################
         #INICADORES DE CRESCIMENTO
         ##########################
 
         #CAGR RECEITAS 5 ANOS
-        cagr = browser.find_element_by_xpath('').text
-        print(cagr)
+        cagr_receitas = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[5]/div/div[1]/div/div/strong').text
+        print('CAGR RECEITAS (5 ANOS):', cagr_receitas)
 
         #CAGR LUCRO 5 ANOS
-        cagr_cinco_anos = browser.find_element_by_xpath('').text
-        print(cagr_cinco_anos)
+        cagr_lucros = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[5]/div/div[2]/div/div/strong').text
+        print('CAGR LUCROS (5 ANOS)', cagr_lucros)
 
 
 
