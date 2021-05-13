@@ -38,9 +38,34 @@ try:
         cotacao = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[1]/div/div[1]/strong').text
         print('Cotação:', cotacao)
 
+        #MÍNIMA DO MÊS
+        min_mes = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/span[2]').text
+        print('Mín. Mês:', min_mes)
+
+        #MÍNIMA DO ANO (52 SEMANAS)
+        min_ano = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[2]/div/div[1]/strong').text
+        print('Mín. Ano:', min_ano)
+
+        #MÁXIMA DO MÊS
+        max_mes = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[3]/div/div[2]/div/span[2]').text
+        print('Máx. Mês:', max_mes)
+
+        #MÁXIMA DO ANO (52 SEMANAS)
+        max_ano = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[3]/div/div[1]/strong').text
+        print('Máx. Ano', max_ano)
+
+        #VALORIZAÇÃO 12 ANUAL (12 SEMANAS)
+        valorizacao_anual = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[5]/div/div[1]/strong').text
+        print('Valorização 12 Meses:', valorizacao_anual)
+
+        #VALORIZAÇÃO MENSAL
+        valorizacao_mensal = browser.find_element_by_xpath('//*[@id="main-2"]/div[2]/div/div[1]/div/div[5]/div/div[2]/div/span[2]/b').text
+        print('Valorização Último Mês:', valorizacao_mensal)
+
         #########################
         #INDICADORES DE VALUATION
         #########################
+        print('')
         
         #P/L
         pl = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[1]/div/div[2]/div/div/strong').text
@@ -101,6 +126,7 @@ try:
         #############################
         #INDICADORES DE ENDIVIDAMENTO
         #############################
+        print('')
 
         #DÍVIDA LÍQUIDA/PL
         divida_liq_pl = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[2]/div/div[1]/div/div/strong').text
@@ -129,6 +155,7 @@ try:
         ##########################
         #INDICADORES DE EFICIÊNCIA
         ##########################
+        print('')
 
         #MARGEM BRUTA
         margem_bruta =  browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[3]/div/div[1]/div/div/strong').text
@@ -149,6 +176,7 @@ try:
         #############################
         #INDICADORES DE RENTABILIDADE
         #############################
+        print('')
         
         #ROE
         roe =  browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[4]/div/div[1]/div/div/strong').text
@@ -169,6 +197,7 @@ try:
         ##########################
         #INICADORES DE CRESCIMENTO
         ##########################
+        print('')
 
         #CAGR RECEITAS 5 ANOS
         cagr_receitas = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[5]/div/div[1]/div/div/strong').text
@@ -176,7 +205,7 @@ try:
 
         #CAGR LUCRO 5 ANOS
         cagr_lucros = browser.find_element_by_xpath('//*[@id="indicators-section"]/div[2]/div/div[5]/div/div[2]/div/div/strong').text
-        print('CAGR LUCROS (5 ANOS)', cagr_lucros)
+        print('CAGR LUCROS (5 ANOS):', cagr_lucros)
 
         # Após mostrar todos os indicadores da ação fazemos algumas análises
 
