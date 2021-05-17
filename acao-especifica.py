@@ -209,7 +209,13 @@ try:
 
         # Após mostrar todos os indicadores da ação fazemos algumas análises
 
-        # Incluir série de condições a partir da Avaliação
+        # Enquanto menor o P/L MELHOR
+        # Enquanto maior o ROE MELHOR
+
+        # Classificar por notas os maiores ROE's
+        # Classificar por notas os menores P/L's
+        # Somar notas dos ROE's e P/L's
+        # Por em ordem decrescente as empresas com base em suas notas
 
         print('')
     except NoSuchElementException:
