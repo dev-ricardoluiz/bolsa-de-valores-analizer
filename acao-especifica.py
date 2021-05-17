@@ -217,7 +217,7 @@ try:
         print('')
     except NoSuchElementException:
         print('____________________________________________________________________________________')
-        print('Não foi possível obter os dados da ação', ticker[posicao])
+        print('Não foi possível obter os dados da ação', ticker)
         print('____________________________________________________________________________________')
 except NoSuchElementException:
     print('____________________________________________________________________________________')
