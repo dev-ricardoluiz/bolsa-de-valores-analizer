@@ -20,18 +20,15 @@ from time import sleep
 # input para especificar ticket da ação que deseja avaliar
 ticker = input('Digite o Ticket (Ex.: PETR3) da Ação que deseja analizar: ')
 
-# array com todas as ações que queira avaliar
-#ticker = ["LWSA3", "CSNA3", "PETR4"]
-
 browser = webdriver.Chrome(ChromeDriverManager().install())
 
 try:
-    browser.get('https://statusinvest.com.br/acoes/'+ticker)
+    browser.get('https://statusinvest.com.br/acoes/'+ticker) 
     try:
         #DESCRIÇÃO DA AÇÃO
         acao = browser.find_element_by_xpath('//*[@id="main-header"]/div/div/div[1]/h1/small').text
-        print('')
-        print('Analisando ação', ticker, '-', acao)
+        print('____________________________________________________________________')
+        print('Analisando ação', ticker, '-', acao) 
         print('')
 
         #COTAÇÃO
@@ -219,6 +216,10 @@ try:
 
         print('')
     except NoSuchElementException:
-        print('Não foi possível obter os dados da ação', ticker)
+        print('____________________________________________________________________________________')
+        print('Não foi possível obter os dados da ação', ticker[posicao])
+        print('____________________________________________________________________________________')
 except NoSuchElementException:
+    print('____________________________________________________________________________________')
     print('Não foi possível encontrar essa ação. Tem certeza que digitou o Ticket corretamente?')
+    print('____________________________________________________________________________________')
